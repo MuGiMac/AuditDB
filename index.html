@@ -10,7 +10,7 @@
     <div class="content">
         <form action="#">
             <div class="container">
-                <div class="field" style="padding-right: 20px;">
+                <div class="field">
                     <label for="start-time">Start Date</label>
                     <input type="datetime-local" id="start-time" required>
                 </div>
@@ -20,24 +20,33 @@
                 </div>
             </div>
             <div class="container-1">
-                <div class="field">
+                <div class="field1">
                     <label class="label-left" for="user">User</label>
                     <input type="text" id="user" value="*" required>
                 </div>
-                <div class="field">
+                <div class="field1">
                     <label class="label-left" for="user_ip">User IP-Address</label>
                     <input type="text" id="user_ip" value="*" required>
                 </div>
-                <div class="field">
+                <div class="field1">
                     <label class="label-left" for="on_entry">On Entry</label>
                     <input type="text" id="on_entry" value="*" required>
                 </div>
-                <div class="field" style="padding-bottom: 10px;">
+                <div class="field1">
                     <label class="label-left" for="attributes">Attributes</label>
                     <input type="text" id="attributes" value="*" required>
                 </div>
             </div>
             <div class="container">
+                <div class="field">
+                    <label for="operation">Operation</label>
+                    <select id="operation" name="options">
+                        <option value="Add" class="operation">Add</option>
+                        <option value="Delete" class="operation">Delete</option>
+                        <option value="Modify" class="operation">Modify</option>
+                        <option value="*" selected="" class="operation">*</option>
+                    </select>
+                </div>
                 <div class="field">
                     <label class="label-left" for="result">Result</label>
                     <select id="result" name="options">
@@ -59,15 +68,6 @@
                         <option value="66 (notAllowedOnNonLeaf)" class="result">66 (notAllowedOnNonLeaf)</option>
                         <option value="68 (entryAlreadyExists)" class="result">68 (entryAlreadyExists)</option>
                         <option value="*" selected="" class="result">*</option>
-                    </select>
-                </div>
-                <div class="field" style="padding-left: 25px; padding-right: 30px;">
-                    <label for="operation">Operation</label>
-                    <select id="operation" name="options">
-                        <option value="Add" class="operation">Add</option>
-                        <option value="Delete" class="operation">Delete</option>
-                        <option value="Modify" class="operation">Modify</option>
-                        <option value="*" selected="" class="operation">*</option>
                     </select>
                 </div>
                 <div class="field">
