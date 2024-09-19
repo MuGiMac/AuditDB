@@ -1,34 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
-         url('./fonts/Poppins-Regular.woff') format('woff'),
-         url('./fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins-Medium.woff2') format('woff2'),
-         url('./fonts/Poppins-Medium.woff') format('woff'),
-         url('./fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins-SemiBold.woff2') format('woff2'),
-         url('./fonts/Poppins-SemiBold.woff') format('woff'),
-         url('./fonts/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url('./fonts/Poppins-Bold.woff2') format('woff2'),
-         url('./fonts/Poppins-Bold.woff') format('woff'),
-         url('./fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+    src: url('./fonts/Poppins-MediumItalic.ttf') format('truetype');
 }
 * {
     margin: 0;
@@ -56,18 +28,25 @@ body {
     display: flex;
     gap: 40px;
 }
-.field {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 5px;
-}
 .container-1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
 }
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.field1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: -5px;
+}
+
 .split {
     display: flex;
     flex-direction: column;
@@ -78,10 +57,4 @@ label {
 input[type="datetime-local"], input[type="text"] {
     width: 100%;
     box-sizing: border-box;
-}
-.field1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: -5px;
 }
